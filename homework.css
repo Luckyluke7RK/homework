@@ -71,7 +71,16 @@ a{
     height: 500px;
 }
 #main_right1,#main_center,#main_left1{
-    width: 19%;
-    flex-grow: 19;
-    height: 125px;
+}
+#main_3{
+    flex-grow:inherit;
+}
+#ca{
+    text-align: center;
+    background-color: brown;
+}
+#p,#php,#c_sharp,#c_plas,#c,#h,#css,#j{
+    background-color: rgb(13, 244, 252);
+    display: inline-block;
+    margin: 5px;
 }
