@@ -21,22 +21,54 @@ footer{
     height: 55px;
     text-align: center;
 }
-#main_right{
-    width: 30%;
-    flex-grow: 30;
-    height: 500px;
+#main_right img {
+    width: 250px; 
+    height: auto; 
+    max-width: 100%; 
+    display: block; 
 }
+@media (max-width: 800px) {
+    #main_right img {
+        display: none; 
+    }
+}
+@media (min-width: 800px) {
+    #main_right img {
+        display: block; 
+        width: auto; 
+        max-width: 250px; 
+        height: auto;
+    }
+} 
 #main_left{
     width: 60%;
     flex-grow: 60;
     height: 500px;
 }
+#main_left h1, #main_left p {
+    margin: 0;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #main_left {
+        align-items: center;
+        text-align: center; 
+    }
+}
+#main_left h1 {
+    word-break: break-all; 
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 10px;
+}
+
 #main_left,#main_right{
     background-color: rgb(13, 244, 252);
     display: inline-block;
     margin: 5px;
     height: 500px;
-    text-align: center;
+
 }
 .flex-container{
     display: flex;
@@ -59,28 +91,58 @@ footer{
 a{
     text-decoration: none;
 }
-#main_aside,#main_right1,#main_center,#main_left1{
-    background-color: rgb(13, 244, 252);
-    display: inline-block;
-    margin: 5px;
-    text-align: center;
-}
+
 #main_aside{
     width: 30%;
-    flex-grow: 30;
-    height: 500px;
-}
-#main_right1,#main_center,#main_left1{
-}
-#main_3{
-    flex-grow:inherit;
-}
-#ca{
-    text-align: center;
-    background-color: brown;
-}
-#p,#php,#c_sharp,#c_plas,#c,#h,#css,#j{
-    background-color: rgb(13, 244, 252);
-    display: inline-block;
     margin: 5px;
+    height: 500px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(13, 244, 252);
+}
+#main_right1, #main_center, #main_left1 {
+    margin: 5px;
+    background-color: rgb(13, 244, 252);
+    text-align: center;
+    width: 100%;
+}
+#main_3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+@media (min-width: 769px) {
+    #main_right1, #main_center, #main_left1 {
+        width: 30%;
+        height: 200px;
+    }
+}
+@media (max-width: 768px) {
+    #main_right1, #main_center, #main_left1 {
+        width: 100%; 
+        height: 200px; 
+    }
+}
+#ca {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#ca > div {
+    background-color: rgb(13, 244, 252);
+    text-align: center;
+    padding: 20px;
+    width: 22%;
+    box-sizing: border-box;
+}
+@media (min-width: 769px) {
+    #ca > div {
+        width: 22%; 
+    }
+}
+@media (max-width: 768px) {
+    #ca > div {
+        width: 100%;
+    }
 }

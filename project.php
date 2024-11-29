@@ -3,17 +3,17 @@ include("header.html")
 ?>
     <main>
         <div id="main_aside">
-            <span>کناره نویس</span>
+            <span>کارمار باما</span>
         </div>
         <div id="main_3">
             <div id="main_right1" >
-                <span>راست</span>
+                <span>برنامه پایتون</span>
             </div>
             <div id="main_center" >
-                <span>وسط</span>
+                <span>سایت مثل دیجی کالا</span>
             </div>
             <div id="main_left1" >
-                <span>چپ</span>
+                <span>برنامه با C#</span>
             </div>
         </div>
     </main>
